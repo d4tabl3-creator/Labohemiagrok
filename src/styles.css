@@ -1,0 +1,97 @@
+@import "tailwindcss";
+
+@theme {
+  --color-bg: #100c0a;
+  --color-surface: #1a1512;
+  --color-fg: #f4ede4;
+  --color-muted: #a89888;
+  --color-primary: #e4b15a;
+  --color-primary-fg: #1a1208;
+  --color-border: #2e261f;
+  --font-sans: "Outfit", system-ui, sans-serif;
+  --font-display: "Fraunces", "Iowan Old Style", "Palatino Linotype", serif;
+  --radius-sm: 0.125rem;
+}
+
+@layer base {
+  html {
+    background: var(--color-bg);
+    color: var(--color-fg);
+    color-scheme: dark;
+    font-family: var(--font-sans);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  body {
+    min-height: 100vh;
+    background: var(--color-bg);
+  }
+
+  h1,
+  h2,
+  h3 {
+    font-family: var(--font-display);
+    text-wrap: balance;
+  }
+
+  p {
+    text-wrap: pretty;
+  }
+
+  button:not(:disabled),
+  [role="button"]:not(:disabled) {
+    cursor: pointer;
+  }
+
+  ::selection {
+    background: var(--color-primary);
+    color: var(--color-primary-fg);
+  }
+}
+
+.hero-scrim {
+  background: linear-gradient(
+    180deg,
+    color-mix(in oklab, var(--color-bg) 20%, transparent) 0%,
+    color-mix(in oklab, var(--color-bg) 42%, transparent) 42%,
+    var(--color-bg) 100%
+  );
+}
+
+.filament {
+  height: 1px;
+  background: linear-gradient(90deg, var(--color-primary), transparent);
+}
+
+@keyframes rise {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+.rise {
+  animation: rise 720ms ease both;
+}
+
+@keyframes pulse-dot {
+  50% {
+    opacity: 0.35;
+  }
+}
+
+.pulse-dot {
+  animation: pulse-dot 2.4s ease infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .rise,
+  .pulse-dot {
+    animation: none;
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "url": "http://127.0.0.1:8081/",
+  "viewports": {
+    "desktop": {
+      "width": 1280,
+      "height": 800,
+      "status": 200,
+      "title": "La Bohemia Quartet · Música que respira",
+      "hasCanvas": false,
+      "bodyTextLen": 2636,
+      "bodyTextHash": "80582397b42629676a8e9658031cee007876e34843c9b712ebb7ca01c383a1d5",
+      "bodyTextPrefix": "LB La Bohemia Quartet · Puerto Vallarta Música Biografía Cartele",
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "screenshot": "/workspace/screenshots/app-builder-built.png"
+    },
+    "mobile": {
+      "width": 390,
+      "height": 844,
+      "status": 200,
+      "title": "La Bohemia Quartet · Música que respira",
+      "hasCanvas": false,
+      "bodyTextLen": 2582,
+      "bodyTextHash": "54cac342162f50bdfcf1ec7a9583ab9eb85c0980f8c8927d6d2d3c248f3dbd5d",
+      "bodyTextPrefix": "LB La Bohemia Quartet · Puerto Vallarta Cotizar EN CARTELERA · P",
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "screenshot": "/workspace/screenshots/app-builder-built-mobile.png"
+    }
+  },
+  "brandWarnings": [],
+  "authWarnings": [],
+  "verdictFile": "/workspace/screenshots/app-builder-built.json",
+  "divergesFromBaseline": false,
+  "baselineReasons": []
+}
